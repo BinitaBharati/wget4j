@@ -1,4 +1,9 @@
-package com.github.binitabharati.wget4j;
+package com.github.binitabharati.wget4j.test;
+
+import java.io.File;
+
+import com.github.binitabharati.wget4j.Options;
+import com.github.binitabharati.wget4j.impl.WgetImpl;
 
 import junit.framework.Test;
 import junit.framework.TestCase;
@@ -30,9 +35,16 @@ public class AppTest
 
     /**
      * Rigourous Test :-)
+     * @throws Exception 
      */
-    public void testApp()
+    public void testApp() throws Exception
     {
-        assertTrue( true );
+        //assertTrue( true );
+    	WgetImpl wgetImpl = new WgetImpl();
+    	
+    	Options options = new Options();
+    	//options.DONWLOAD_FILE = "C:\\work\\eclipseWS\\wget4j\\test.tar";
+    	
+    	wgetImpl.wget("http://localhost:8080/openss7-1.1.7.20131207.tar", options);
     }
 }

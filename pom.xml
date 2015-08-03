@@ -22,5 +22,15 @@
   	<version>4.12</version>
   	<scope>test</scope>
   </dependency>
+  
+  <dependency>
+	<groupId>org.mortbay.jetty</groupId>
+	<artifactId>jetty-maven-plugin</artifactId>
+	<version>8.1.0.RC5</version>
+</dependency>
+  
+
+
+  
   </dependencies>
 </project>
